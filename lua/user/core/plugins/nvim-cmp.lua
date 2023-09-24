@@ -10,13 +10,9 @@ return {
 					require("luasnip").lsp_expand(args.body)			-- Using luasnip as snippet engine
 				end,
 			},
-			window = {
-				completion = cmp.config.window.bordered(),
-				documentation = cmp.config.window.bordered()
-			},
 			mapping = cmp.mapping.preset.insert({
-				["<C-k>"]	 = cmp.mapping.select_next_item(),
-				["<C-j>"]	 = cmp.mapping.select_prev_item(),
+				["<C-k>"]	 = cmp.mapping.select_prev_item(),
+				["<C-j>"]	 = cmp.mapping.select_next_item(),
 				["<C-e>"]	 = cmp.mapping.abort(),
 			}),
 			sources = cmp.config.sources({

@@ -5,7 +5,15 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd([[colorscheme tokyonight]])
+			require("tokyonight").setup({
+				transparent = true,
+				style = "night",
+				styles = {
+					comments = { italic = false },
+					keywords = { italic = false },
+				}
+			})
+			vim.cmd[[colorscheme tokyonight]]
 		end,
 	},
 }

@@ -2,8 +2,30 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
-		ensure_installed = {vim, lua, c, cpp, python, rust},
-		sync_install = false,
-		highlight = { enable = true },
+		opts = {
+			highlight = { enable = true },
+			indent = { enable = true },
+			ensure_installed = {
+				"bash",
+				"c",
+				"html",
+				"javascript",
+				"jsdoc",
+				"json",
+				"lua",
+				"luadoc",
+				"luap",
+				"markdown",
+				"markdown_inline",
+				"python",
+				"query",
+				"regex",
+				"tsx",
+				"typescript",
+				"vim",
+				"vimdoc",
+				"yaml",
+			},
+		},
 	}
 }

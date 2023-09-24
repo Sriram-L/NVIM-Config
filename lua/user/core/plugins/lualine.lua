@@ -8,8 +8,8 @@ return {
 		config = function()
 			require('lualine').setup{
 				options = {
-					theme = 'palenight',
-					disabled_filetypes = {'lazy', 'NvimTree'}
+					theme = 'onedark',
+					disabled_filetypes = {'lazy', 'NvimTree', 'alpha'}
 				},
 				sections = {
 					lualine_x = {'filetype'},
