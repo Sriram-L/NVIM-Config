@@ -13,6 +13,7 @@ return {
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"]	 = cmp.mapping.select_prev_item(),
 				["<C-j>"]	 = cmp.mapping.select_next_item(),
+				["<tab>"]	 = cmp.mapping.select_next_item(),
 				["<C-e>"]	 = cmp.mapping.abort(),
 			}),
 			sources = cmp.config.sources({

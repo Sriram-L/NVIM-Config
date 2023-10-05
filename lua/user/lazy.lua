@@ -13,7 +13,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("user.core.plugins")
+require("lazy").setup({{import = "user.core.plugins"}, {import = "user.core.plugins.lsp"}})
 
 -- LAZY setup  (DO NOT DISTURB) --
 
