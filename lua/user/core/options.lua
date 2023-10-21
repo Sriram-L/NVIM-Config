@@ -9,6 +9,7 @@ local options = {
 	backup = false,				-- no need of backup
 	clipboard = "unnamedplus", 		-- allows nvim to use the system clipboard
 	cmdheight = 2,				-- adjust space for nvim commandline to display messages
+	cursorline = true,			-- Need cursorline highlight for readability
 	completeopt = { "menuone" , "noselect" },-- Autocomplete settings to work with cmp
 	conceallevel = 0,			-- '' visibility in markdown files
 	fileencoding = "utf-8",			-- Encoding

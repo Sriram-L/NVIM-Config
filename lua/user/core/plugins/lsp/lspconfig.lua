@@ -69,9 +69,6 @@ return {
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
-	--Disabling diagnostics (hate diagnostics)
-	local diag = vim.diagnostic.disable()	
-
     -- configure html server
     -- configure python server
     lspconfig["pyright"].setup({
