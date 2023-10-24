@@ -12,6 +12,12 @@ return {
 					disabled_filetypes = {'lazy', 'NvimTree', 'alpha'}
 				},
 				sections = {
+					lualine_c = {
+						{
+							'filename',
+							path = 1, -- setting relative path for displaying file name
+						},
+					},
 					lualine_x = {'filetype'},
 				}
 			}
