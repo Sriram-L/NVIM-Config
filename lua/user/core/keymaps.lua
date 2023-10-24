@@ -28,10 +28,6 @@ keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- INSERT MODE --
 
--- Quick normal mode! --
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
-
 -- VISUAL MODE --
 
 -- Allow continuous indentation in visual mode --
