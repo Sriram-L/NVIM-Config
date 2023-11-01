@@ -13,7 +13,7 @@ local options = {
 	completeopt = { "menuone" , "noselect" },-- Autocomplete settings to work with cmp
 	conceallevel = 0,			-- '' visibility in markdown files
 	fileencoding = "utf-8",			-- Encoding
-	hlsearch = true,			-- highlight all searches on previous search pattern
+	hlsearch = false,			-- highlight all searches on previous search pattern
 	ignorecase = true,			-- ignore case in search pattern
 	showtabline = 0,			-- I dont like tabs, hence
 	smartcase = true,
@@ -48,6 +48,7 @@ end
 
 Cmd "set whichwrap+=<,>,[,],h,l"
 Cmd [[set iskeyword+=-]]
+Cmd [[set colorcolumn=80]]
 
 G.loaded_netrw = 1				-- Disabling netrw for nvim-tree
 G.loaded_netrwPlugin = 1

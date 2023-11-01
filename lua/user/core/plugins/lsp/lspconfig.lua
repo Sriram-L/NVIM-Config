@@ -103,5 +103,11 @@ return {
 		on_attach = on_attach,
 	})
 
+	-- configure golang language server
+	lspconfig["gopls"].setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+	})
+
   end,
 }
