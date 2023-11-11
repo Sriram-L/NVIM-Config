@@ -49,6 +49,7 @@ end
 Cmd "set whichwrap+=<,>,[,],h,l"
 Cmd [[set iskeyword+=-]]
 Cmd [[set colorcolumn=80]]
+Cmd [[set formatoptions-=cro]]
 
 G.loaded_netrw = 1				-- Disabling netrw for nvim-tree
 G.loaded_netrwPlugin = 1
