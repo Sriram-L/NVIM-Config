@@ -6,7 +6,7 @@ return {
 		priority = 1000,
 		config = function()
 			require("tokyonight").setup({
-				transparent = false,
+				transparent = true,
 				style = "night",
 				styles = {
 					comments = { italic = false },
@@ -14,6 +14,7 @@ return {
 				}
 			})
 			vim.cmd[[colorscheme tokyonight]]
+			vim.cmd[[highlight ColorColumn guibg=#34495E]]
 		end,
 	},
 }

@@ -31,12 +31,11 @@ local kind_icons = {
 return {
 	{ 
 		'hrsh7th/nvim-cmp',
-		dependencies = { 'hrsh7th/cmp-nvim-lsp','hrsh7th/cmp-buffer', 'hrsh7th/cmp-path','hrsh7th/cmp-cmdline', 'L3MON4D3/LuaSnip' },
+		dependencies = { 'hrsh7th/cmp-nvim-lsp','hrsh7th/cmp-buffer', 'hrsh7th/cmp-path','hrsh7th/cmp-cmdline', 'rafamadriz/friendly-snippets','saadparwaiz1/cmp_luasnip','L3MON4D3/LuaSnip' },
 		config = function()
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
-			require ('luasnip.loaders.from_vscode').load({ paths = "./snippet_folder/"})
-			luasnip.config.setup{}
+			require ('luasnip.loaders.from_vscode').lazy_load({ paths = "~/.config/nvim/snippets/"})
 			cmp.setup({
 				snippet = {
 					expand = function(args)

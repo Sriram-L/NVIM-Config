@@ -21,6 +21,8 @@ keymap("n", "<C-l>","<C-w>l", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+--Smart save
+keymap("n", "<leader>w", ":w<CR>", opts)
 
 -- Move lines above and below --
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
