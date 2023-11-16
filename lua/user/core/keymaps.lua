@@ -24,6 +24,9 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 --Smart save
 keymap("n", "<leader>w", ":w<CR>", opts)
 
+-- Close buffer
+keymap("n", "<leader>d", ":bd!<CR>", opts)
+
 -- Move lines above and below --
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)

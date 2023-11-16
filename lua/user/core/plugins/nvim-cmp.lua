@@ -42,6 +42,7 @@ return {
 						require("luasnip").lsp_expand(args.body)			-- Using luasnip as snippet engine
 					end,
 				},
+				preselect = cmp.PreselectMode.None,
 				mapping = cmp.mapping.preset.insert {
 					['<C-n>'] = cmp.mapping.select_next_item(),
 					['<C-p>'] = cmp.mapping.select_prev_item(),
@@ -49,8 +50,7 @@ return {
 					['<C-f>'] = cmp.mapping.scroll_docs(4),
 					['<C-Space>'] = cmp.mapping.complete {},
 					['<CR>'] = cmp.mapping.confirm {
-						behavior = cmp.ConfirmBehavior.Replace,
-						select = true,
+						select = false,
 					},
 					['<Tab>'] = cmp.mapping(function(fallback)
 						if cmp.visible() then
