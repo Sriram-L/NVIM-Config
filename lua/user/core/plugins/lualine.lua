@@ -9,7 +9,7 @@ return {
 			require('lualine').setup{
 				options = {
 					theme = 'onedark',
-					disabled_filetypes = {'lazy', 'NvimTree', 'alpha'},
+					disabled_filetypes = {'lazy', 'NvimTree', 'alpha', 'toggleterm'},
 					section_separators = '',
 					component_separators = '',
 				},
