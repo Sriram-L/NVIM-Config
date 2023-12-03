@@ -25,7 +25,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>w", ":w<CR>", opts)
 
 -- Close buffer
-keymap("n", "<leader>d", ":bd!<CR>", opts)
+keymap("n", "<leader>d", ":bdelete!<CR>", opts)
 
 -- Move lines above and below --
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)

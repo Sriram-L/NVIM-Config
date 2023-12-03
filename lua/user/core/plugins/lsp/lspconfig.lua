@@ -109,5 +109,11 @@ return {
 		on_attach = on_attach,
 	})
 
+	-- Configure latex server textlab for LaTex 
+	lspconfig["texlab"].setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+	})
+
   end,
 }
