@@ -8,7 +8,7 @@ return {
 		config = function()
 			require('lualine').setup{
 				options = {
-					theme = 'onedark',
+					theme = 'catppuccin',
 					disabled_filetypes = {'lazy', 'NvimTree', 'alpha', 'toggleterm'},
 					section_separators = '',
 					component_separators = '',
