@@ -1,16 +1,16 @@
 -- COLORSCHEME configs --
 return {
 	{
-		"EdenEast/nightfox.nvim",
+		'catppuccin/nvim',
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require("nightfox").setup({
-				options = {
-					transparent = false,
+			require('catppuccin').setup({
+				background = {
+					dark = "frappe"
 				}
 			})
-			vim.cmd[[colorscheme nordfox]]
+			vim.cmd[[colorscheme catppuccin]]
 			vim.cmd[[highlight ColorColumn guibg=#808080]]
 		end,
 	}
