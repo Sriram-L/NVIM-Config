@@ -14,6 +14,12 @@ return {
 					component_separators = '',
 				},
 				sections = {
+					lualine_b = {
+						{
+							'diagnostics',
+							symbols = {error = 'E', warn = 'W', info = 'I', hint = 'H'},
+						}
+					},
 					lualine_c = {
 						{
 							'filename',
