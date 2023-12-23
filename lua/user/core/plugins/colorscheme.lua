@@ -1,18 +1,18 @@
 -- COLORSCHEME configs --
 return {
 	{
-		'catppuccin/nvim',
+		"rose-pine/neovim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require('catppuccin').setup({
-				background = {
-					dark = "frappe"
-				}
+			require('rose-pine').setup({
+				variant = 'moon',
+				disable_background = true,
+				disable_float_background = true,
+				disable_italics = true,
 			})
-			vim.cmd[[colorscheme catppuccin]]
-			vim.cmd[[highlight ColorColumn guibg=#808080]]
-		end,
+			vim.cmd([[colorscheme rose-pine]])
+		end
 	}
 }
 

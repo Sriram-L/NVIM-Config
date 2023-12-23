@@ -38,6 +38,7 @@ local options = {
 	sidescrolloff = 8,
 	guifont = "monospace:h17",
 	showmode = false,			-- Dont like the mode name to be displayed in bottom
+	fillchars = { eob = ' ' }
 }
 
 Opt.shortmess:append "c"			-- Avoid excessive messages about errors and warnings
