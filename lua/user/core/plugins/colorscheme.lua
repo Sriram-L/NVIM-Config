@@ -6,7 +6,7 @@ return {
 		priority = 1000,
 		config = function()
 			require('rose-pine').setup({
-				variant = 'moon',
+				variant = 'main',
 				disable_background = true,
 				disable_float_background = true,
 				disable_italics = true,
