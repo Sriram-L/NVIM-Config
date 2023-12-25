@@ -1,17 +1,16 @@
 -- COLORSCHEME configs --
 return {
 	{
-		"rose-pine/neovim",
+		"catppuccin/nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require('rose-pine').setup({
-				variant = 'main',
-				disable_background = true,
-				disable_float_background = true,
-				disable_italics = true,
+			require('catppuccin').setup({
+				transparent_background = true,
+				no_italic = true,
+				no_underline = true
 			})
-			vim.cmd([[colorscheme rose-pine]])
+			vim.cmd([[colorscheme catppuccin]])
 		end
 	}
 }

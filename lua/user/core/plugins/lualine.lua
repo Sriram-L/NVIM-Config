@@ -3,12 +3,12 @@ return {
 		"nvim-lualine/lualine.nvim",
 		lazy = false,
 		dependencies = {
-			"nvim-tree/nvim-web-devicons"
+			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
 			require('lualine').setup{
 				options = {
-					theme = 'rose-pine',
+					theme = 'catppuccin',
 					disabled_filetypes = {'lazy', 'NvimTree', 'alpha', 'toggleterm'},
 					section_separators = '',
 					component_separators = '',
